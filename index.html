@@ -1,5 +1,55 @@
-<html><head>
-<meta http-equiv="refresh" content="0; url=https://rumble-charts.github.io/rumble-charts/" />
-</head><body>
-<h1><a href="https://rumble-charts.github.io/rumble-charts/">https://rumble-charts.github.io/rumble-charts/</a></h1>
-</body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><title>Storybook</title><meta name="viewport" content="width=device-width,initial-scale=1"/><style>html, body {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }</style><script>/* globals window */
+  /* eslint-disable no-underscore-dangle */
+  try {
+    if (window.top !== window) {
+      window.__REACT_DEVTOOLS_GLOBAL_HOOK__ = window.top.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+    }
+  } catch (e) {
+    // eslint-disable-next-line no-console
+    console.warn('unable to connect to top frame for connecting dev tools');
+  }
+
+  window.onerror = function onerror(message, source, line, column, err) {
+    if (window.CONFIG_TYPE !== 'DEVELOPMENT') return;
+    // eslint-disable-next-line no-var, vars-on-top
+    var xhr = new window.XMLHttpRequest();
+    xhr.open('POST', '/runtime-error');
+    xhr.setRequestHeader('Content-Type', 'application/json;charset=UTF-8');
+    xhr.send(
+      JSON.stringify({
+        /* eslint-disable object-shorthand */
+        message: message,
+        source: source,
+        line: line,
+        column: column,
+        error: err && { message: err.message, name: err.name, stack: err.stack },
+        origin: 'manager',
+        /* eslint-enable object-shorthand */
+      })
+    );
+  };</script><style>#root[hidden],
+      #docs-root[hidden] {
+        display: none !important;
+      }</style></head><body><div id="root"></div><div id="docs-root"></div><script>window['CONFIG_TYPE'] = "PRODUCTION";
+            
+        
+            
+              window['LOGLEVEL'] = "info";
+            
+        
+            
+        
+            
+        
+            
+              window['DOCS_MODE'] = false;</script><script src="runtime~main.5d26f661291a8d90eebc.manager.bundle.js"></script><script src="vendors~main.78c431e25a0a51b2d75d.manager.bundle.js"></script><script src="main.c9b9df515a76d82b53a3.manager.bundle.js"></script></body></html>
