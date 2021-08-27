@@ -63,8 +63,7 @@
 				</a>
 				<p><a href="https://github.com/rumble-charts/rumble-charts/actions/workflows/node.js.yml"><img src="https://github.com/rumble-charts/rumble-charts/actions/workflows/node.js.yml/badge.svg" alt="Node.js CI"></a>
 					<a href="https://github.com/rumble-charts/rumble-charts/actions/workflows/codeql-analysis.yml"><img src="https://github.com/rumble-charts/rumble-charts/actions/workflows/codeql-analysis.yml/badge.svg" alt="CodeQL"></a>
-					<a href="https://codecov.io/gh/rumble-charts/rumble-charts"><img src="https://codecov.io/gh/rumble-charts/rumble-charts/branch/master/graph/badge.svg" alt="codecov"></a>
-				<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/rumble-charts/rumble-charts.svg" alt="Greenkeeper badge"></a></p>
+				<a href="https://codecov.io/gh/rumble-charts/rumble-charts"><img src="https://codecov.io/gh/rumble-charts/rumble-charts/branch/master/graph/badge.svg" alt="codecov"></a></p>
 				<p><a href="https://sonarcloud.io/dashboard?id=rumble-charts_rumble-charts"><img src="https://sonarcloud.io/api/project_badges/measure?project=rumble-charts_rumble-charts&metric=sqale_rating" alt="Maintainability Rating"></a>
 					<a href="https://sonarcloud.io/dashboard?id=rumble-charts_rumble-charts"><img src="https://sonarcloud.io/api/project_badges/measure?project=rumble-charts_rumble-charts&metric=alert_status" alt="Quality Gate Status"></a>
 					<a href="https://sonarcloud.io/dashboard?id=rumble-charts_rumble-charts"><img src="https://sonarcloud.io/api/project_badges/measure?project=rumble-charts_rumble-charts&metric=reliability_rating" alt="Reliability Rating"></a>
@@ -72,7 +71,7 @@
 				<a href="https://sonarcloud.io/dashboard?id=rumble-charts_rumble-charts"><img src="https://sonarcloud.io/api/project_badges/measure?project=rumble-charts_rumble-charts&metric=vulnerabilities" alt="Vulnerabilities"></a></p>
 				<p><a href="https://www.npmjs.com/package/rumble-charts"><img src="https://img.shields.io/npm/v/rumble-charts.svg" alt="npm"></a>
 				<a href="https://www.npmjs.com/package/rumble-charts"><img src="https://img.shields.io/npm/dm/rumble-charts.svg" alt="npm"></a></p>
-				<p>React components for building composable and flexible charts to visualize your data. </p>
+				<p>React components for building composable and flexible charts to visualize your data.</p>
 				<p>It&#39;s based on D3.js under the hood, but most of the time you will not feel that.</p>
 				<a href="#real-world-examples" id="real-world-examples" style="color: inherit; text-decoration: none;">
 					<h2>Real-world examples</h2>
@@ -83,12 +82,12 @@
 				<a href="#documentation" id="documentation" style="color: inherit; text-decoration: none;">
 					<h2>Documentation</h2>
 				</a>
-				<p>All examples are editable. You can see a result right on the page.</p>
+				<p>All examples are live editable on &quot;Playroom&quot; tab.</p>
 				<p><a href="https://rumble-charts.github.io">https://rumble-charts.github.io</a></p>
 				<a href="#demo--live-edit" id="demo--live-edit" style="color: inherit; text-decoration: none;">
 					<h2>Demo / live edit</h2>
 				</a>
-				<p><a href="https://rosko.github.io/slides/2016-04-declarative-charts/#/liveedit">rosko.github.io/slides/2016-04-declarative-charts/#/liveedit</a></p>
+				<p><a href="https://rumble-charts.github.io/playroom/">https://rumble-charts.github.io/playroom/</a></p>
 				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
 					<h2>Installation</h2>
 				</a>
@@ -103,7 +102,7 @@
 				<p>Just include it:</p>
 				<pre><code class="language-javascript"><span style="color: #AF00DB">import</span><span style="color: #000000"> {</span>
 <span style="color: #000000">  </span><span style="color: #008000">// main component</span>
-<span style="color: #000000">  </span><span style="color: #001080">Chart</span><span style="color: #000000">, </span>
+<span style="color: #000000">  </span><span style="color: #001080">Chart</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #008000">// graphs</span>
 <span style="color: #000000">  </span><span style="color: #001080">Bars</span><span style="color: #000000">, </span><span style="color: #001080">Cloud</span><span style="color: #000000">, </span><span style="color: #001080">Dots</span><span style="color: #000000">, </span><span style="color: #001080">Labels</span><span style="color: #000000">, </span><span style="color: #001080">Lines</span><span style="color: #000000">, </span><span style="color: #001080">Pies</span><span style="color: #000000">, </span><span style="color: #001080">RadialLines</span><span style="color: #000000">, </span><span style="color: #001080">Ticks</span><span style="color: #000000">, </span><span style="color: #001080">Title</span><span style="color: #000000">,</span>
 <span style="color: #000000">  </span><span style="color: #008000">// wrappers</span>
@@ -114,49 +113,27 @@
 </code></pre>
 				<p>And use:</p>
 				<pre><code class="language-jsx"><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">series</span><span style="color: #000000"> = [{</span>
-<span style="color: #000000">    </span><span style="color: #001080">data:</span><span style="color: #000000"> [</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]</span>
+<span style="color: #000000">  </span><span style="color: #001080">data:</span><span style="color: #000000"> [</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">]</span>
 <span style="color: #000000">}, {</span>
-<span style="color: #000000">    </span><span style="color: #001080">data:</span><span style="color: #000000"> [</span><span style="color: #098658">5</span><span style="color: #000000">, </span><span style="color: #098658">7</span><span style="color: #000000">, </span><span style="color: #098658">11</span><span style="color: #000000">]</span>
+<span style="color: #000000">  </span><span style="color: #001080">data:</span><span style="color: #000000"> [</span><span style="color: #098658">5</span><span style="color: #000000">, </span><span style="color: #098658">7</span><span style="color: #000000">, </span><span style="color: #098658">11</span><span style="color: #000000">]</span>
 <span style="color: #000000">}, {</span>
-<span style="color: #000000">    </span><span style="color: #001080">data:</span><span style="color: #000000"> [</span><span style="color: #098658">13</span><span style="color: #000000">, </span><span style="color: #098658">17</span><span style="color: #000000">, </span><span style="color: #098658">19</span><span style="color: #000000">]</span>
+<span style="color: #000000">  </span><span style="color: #001080">data:</span><span style="color: #000000"> [</span><span style="color: #098658">13</span><span style="color: #000000">, </span><span style="color: #098658">17</span><span style="color: #000000">, </span><span style="color: #098658">19</span><span style="color: #000000">]</span>
 <span style="color: #000000">}];</span>
 
 <span style="color: #800000">&lt;</span><span style="color: #267F99">Chart</span><span style="color: #000000"> </span><span style="color: #FF0000">width</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">600</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #FF0000">height</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">250</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #FF0000">series</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #001080">series</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #FF0000">minY</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">0</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #FF0000">maxY</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">20</span><span style="color: #0000FF">}</span><span style="color: #800000">&gt;</span>
 <span style="color: #000000">  </span><span style="color: #800000">&lt;</span><span style="color: #267F99">Bars</span><span style="color: #000000"> </span><span style="color: #FF0000">innerPadding</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">5</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #FF0000">groupPadding</span><span style="color: #000000">=</span><span style="color: #0000FF">{</span><span style="color: #098658">10</span><span style="color: #0000FF">}</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span>
-<span style="color: #000000">    </span><span style="color: #800000">&lt;</span><span style="color: #267F99">Lines</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span>
+<span style="color: #000000">  </span><span style="color: #800000">&lt;</span><span style="color: #267F99">Lines</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span>
 <span style="color: #000000">  </span><span style="color: #800000">&lt;</span><span style="color: #267F99">Dots</span><span style="color: #000000"> </span><span style="color: #800000">/&gt;</span>
 <span style="color: #800000">&lt;/</span><span style="color: #267F99">Chart</span><span style="color: #800000">&gt;</span><span style="color: #000000">;</span>
 </code></pre>
 				<p>Result:</p>
 				<p><img src="./docs/images/08.png" alt="Combined Chart"></p>
+				<a href="#changelog" id="changelog" style="color: inherit; text-decoration: none;">
+					<h2><a href="CHANGELOG.md">Changelog</a></h2>
+				</a>
 				<a href="#road-map" id="road-map" style="color: inherit; text-decoration: none;">
 					<h2><a href="ROADMAP.md">Road map</a></h2>
 				</a>
-				<a href="#similar-projects" id="similar-projects" style="color: inherit; text-decoration: none;">
-					<h2>Similar projects</h2>
-				</a>
-				<p>Mainly there are 3 approaches to integrate React and D3:  </p>
-				<ul>
-					<li>React wraps D3<ul>
-							<li><a href="https://github.com/bgrsquared/d3-react-squared">d3-react-squared</a>  </li>
-							<li><a href="https://github.com/AnSavvides/d3act">d3act</a></li>
-						</ul>
-					</li>
-					<li>D3 prepares virtual DOM for React<ul>
-							<li><a href="https://github.com/QubitProducts/d3-react-sparkline/">d3-react-sparkline</a> - based on react-faux-dom</li>
-							<li><a href="https://github.com/Olical/react-faux-dom">react-faux-dom</a></li>
-						</ul>
-					</li>
-					<li>React builds virtual DOM, D3 makes math (<code>rumble-charts</code> is here) <ul>
-							<li><a href="https://github.com/esbullington/react-d3/">react-d3</a> and <a href="https://github.com/yang-wei/rd3">rd3</a> as a fork</li>
-							<li><a href="https://github.com/codesuki/react-d3-components">react-d3-components</a></li>
-							<li><a href="https://github.com/uber/react-vis">react-vis</a></li>
-							<li><a href="https://github.com/recharts/recharts">recharts</a></li>
-							<li><a href="https://github.com/FormidableLabs/victory">victory</a></li>
-							<li><a href="https://github.com/hshoff/vx">vx</a></li>
-						</ul>
-					</li>
-				</ul>
 				<a href="#license" id="license" style="color: inherit; text-decoration: none;">
 					<h2>License</h2>
 				</a>
